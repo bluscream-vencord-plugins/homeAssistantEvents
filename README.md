@@ -445,6 +445,19 @@ This plugin sends event data to your HomeAssistant instance. Make sure you trust
 
 No message content is sent, only metadata about the events.
 
+## Installation
+
+1. Copy the `blu-homeassistant-events` folder to your Vencord `src/userplugins` directory
+2. Rebuild Vencord: `pnpm run build`
+3. Restart Discord
+4. Enable the plugin in Vencord settings
+5. Configure your HomeAssistant connection (Event URL + Token or Webhook URL)
+6. Enable/disable specific event types as needed
+
+## AI Disclaimer
+
+This plugin was developed with the assistance of AI (Claude Sonnet 4.5). The AI helped with code structure, implementation details, and debugging. While the code has been reviewed and tested, please use it at your own discretion. If you encounter any issues, please report them through the GitHub issues page.
+
 ## Credits
 
 Based on the PowerShell script example by Bluscream.
