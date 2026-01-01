@@ -143,7 +143,7 @@ action:
 
 ## AI Disclaimer
 
-This plugin was developed with the assistance of AI (Claude Sonnet 4.5). The code has been reviewed and tested, but use at your own discretion. Report issues through GitHub.
+This plugin was developed with assistance from **Cursor.AI** (Cursor's AI coding assistant). The AI was used to help with code generation, debugging, documentation, and implementation. While AI assistance was utilized, all code and features were reviewed and tested to ensure quality and functionality.
 
 ## License
 
