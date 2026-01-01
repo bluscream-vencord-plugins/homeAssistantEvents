@@ -144,3 +144,7 @@ action:
 ## AI Disclaimer
 
 This plugin was developed with the assistance of AI (Claude Sonnet 4.5). The code has been reviewed and tested, but use at your own discretion. Report issues through GitHub.
+
+## License
+
+GPL-3.0-or-later
