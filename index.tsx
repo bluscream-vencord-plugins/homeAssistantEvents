@@ -472,9 +472,7 @@ async function sendHomeAssistantEvent(eventType: string, data: Record<string, an
 export default definePlugin({
     name: "HomeAssistantEvents",
     description: "Send Discord events to HomeAssistant for automation",
-    authors: [
-        { name: "Bluscream", id: 467777925790564352n },
-    ],
+    authors: [{name:"Bluscream",id:467777925790564352n},{name:"Cursor.AI",id:0n}],
     settings,
 
     flux: {
