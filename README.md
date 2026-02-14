@@ -113,38 +113,32 @@ action:
       message: "{{ trigger.event.data.user_name }} joined"
 ```
 
-## Installation
 
-1. Copy `blu-homeassistant-events` folder to `src/userplugins`
-2. Run `pnpm run build`
-3. Restart Discord
-4. Enable plugin in settings
-5. Configure connection settings
 
-## Settings Overview
 
-**Connection**:
 
-- Event URL + Bearer Token (API method)
-- Webhook URL (webhook method)
-- Can use both simultaneously
 
-**Event Toggles** (39 total):
 
-- Each event type has individual toggle(s)
-- Self vs Others filtering
-- Mention detection
-- Same voice channel filtering
+## Installation 
 
-**Other**:
+### 🪄 Installation Wizard
+The easiest way to install this plugin is to use the **[Plugin Installer Generator](https://bluscream-vencord-plugins.github.io)**. 
+Simply select this plugin from the list and download your custom install script.
 
-- Log events to console (debugging)
-- Redact sensitive data (enabled by default)
-
-## AI Disclaimer
-
-This plugin was developed with assistance from **Cursor.AI** (Cursor's AI coding assistant). The AI was used to help with code generation, debugging, documentation, and implementation. While AI assistance was utilized, all code and features were reviewed and tested to ensure quality and functionality.
-
-## License
-
-Unlicense
+### 💻 Manual Installation (PowerShell)
+Alternatively, you can run this snippet in your Equicord/Vencord source directory:
+```powershell
+$ErrorActionPreference = "Stop"
+winget install -e --id Git.Git
+winget install -e --id OpenJS.NodeJS
+npm install -g pnpm
+git clone https://github.com/Equicord/Equicord Equicord
+New-Item -ItemType Directory -Force -Path "Equicord\src\userplugins" | Out-Null
+git clone https://github.com/bluscream-vencord-plugins/blu-homeassistant-events.git -b "main" "Equicord\src\userplugins\blu-homeassistant-events"
+cd "Equicord"
+npm install -g pnpm
+pnpm install --frozen-lockfile
+pnpm build
+pnpm buildWeb
+pnpm inject
+```
