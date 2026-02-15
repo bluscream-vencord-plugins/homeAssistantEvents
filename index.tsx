@@ -1,18 +1,18 @@
-// Authors: Bluscream, Cursor.AI
-// Created at 2025-10-09 09:12:14
-/*
- * Vencord, a Discord client mod
- * Copyright (c) 2024 Vendicated and contributors
- * SPDX-License-Identifier: GPL-3.0-or-later
- */
+export const pluginInfo = {
+    id: "homeAssistantEvents",
+    name: "HomeAssistantEvents",
+    description: "Send Discord events to HomeAssistant for automation",
+    color: "#00bcd4"
+};
 
+// Created at 2025-10-09 09:12:14
 import { definePluginSettings } from "@api/Settings";
 import { Devs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import definePlugin, { OptionType, PluginNative } from "@utils/types";
 import { ChannelStore, GuildStore, SelectedChannelStore, SelectedGuildStore, UserStore } from "@webpack/common";
 
-const logger = new Logger("HomeAssistantEvents", "#00bcd4");
+const logger = new Logger(pluginInfo.name, pluginInfo.color);
 
 const Native = VencordNative.pluginHelpers.HomeAssistantEvents as PluginNative<typeof import("./native")>;
 
