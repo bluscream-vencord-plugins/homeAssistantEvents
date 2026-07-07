@@ -185,7 +185,7 @@ async function sendHomeAssistantEvent(eventType: string, data: Record<string, an
 
 // region Definition
 export default definePlugin({
-    name: pluginInfo.name,
+    name: "HomeAssistantEvents",
     description: pluginInfo.description,
     authors: pluginInfo.authors,
     settings,
